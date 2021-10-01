@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "emirites",
+  "info": {
+    "name": "Emirates",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "city_id": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "city_name": {
+      "type": "string"
+    },
+    "companies": {
+      "via": "city",
+      "collection": "company",
+      "dominant": true
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ownership-summaries",
+      "handler": "ownership-summary.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ownership-summaries/count",
+      "handler": "ownership-summary.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ownership-summaries/:id",
+      "handler": "ownership-summary.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ownership-summaries",
+      "handler": "ownership-summary.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ownership-summaries/:id",
+      "handler": "ownership-summary.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ownership-summaries/:id",
+      "handler": "ownership-summary.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

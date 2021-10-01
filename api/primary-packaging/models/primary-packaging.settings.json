@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "primary_packagings",
+  "info": {
+    "name": "primary_packaging"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pack_id": {
+      "type": "integer",
+      "unique": true,
+      "required": true
+    },
+    "package_name": {
+      "type": "string"
+    },
+    "products": {
+      "collection": "product",
+      "via": "primary_packagings",
+      "dominant": true
+    }
+  }
+}

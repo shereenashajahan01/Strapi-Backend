@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/subsectors",
+      "handler": "subsector.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/subsectors/count",
+      "handler": "subsector.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/subsectors/:id",
+      "handler": "subsector.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/subsectors",
+      "handler": "subsector.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/subsectors/:id",
+      "handler": "subsector.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/subsectors/:id",
+      "handler": "subsector.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

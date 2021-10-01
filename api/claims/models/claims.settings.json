@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "claims",
+  "info": {
+    "name": "claims"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "claim_id": {
+      "type": "integer",
+      "unique": true,
+      "required": true
+    },
+    "claim_name": {
+      "type": "string"
+    },
+    "products": {
+      "collection": "product",
+      "via": "claims",
+      "dominant": true
+    }
+  }
+}

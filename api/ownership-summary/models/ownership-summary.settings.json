@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ownership_summaries",
+  "info": {
+    "name": "ownership_summary",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "summary_id": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "summary_name": {
+      "type": "string"
+    },
+    "summary": {
+      "via": "ownership_summaries",
+      "collection": "company",
+      "dominant": true
+    }
+  }
+}

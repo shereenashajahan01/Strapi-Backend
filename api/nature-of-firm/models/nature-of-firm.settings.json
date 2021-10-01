@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "nature_of_firms",
+  "info": {
+    "name": "nature_of_firm"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nature_id": {
+      "type": "integer"
+    },
+    "nature_name": {
+      "type": "string"
+    },
+    "companies": {
+      "collection": "company",
+      "via": "nature_of_firms",
+      "dominant": true
+    }
+  }
+}

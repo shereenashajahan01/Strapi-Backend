@@ -1,0 +1,80 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "product"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "product_name": {
+      "type": "string",
+      "required": true
+    },
+    "manufactur_name": {
+      "type": "string"
+    },
+    "product_id": {
+      "type": "uid",
+      "targetField": "product_name"
+    },
+    "manufactor_id": {
+      "type": "uid",
+      "targetField": "manufactur_name"
+    },
+    "brand": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "subcategory": {
+      "type": "string"
+    },
+    "Product_Description": {
+      "type": "string"
+    },
+    "Pack_Size": {
+      "type": "string"
+    },
+    "Price_per_primary_Packaging": {
+      "type": "string"
+    },
+    "Storage": {
+      "type": "string"
+    },
+    "Ingredients": {
+      "type": "string"
+    },
+    "Tags": {
+      "type": "string"
+    },
+    "Product_Photographs": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "Nutrition": {
+      "type": "richtext"
+    },
+    "primary_packagings": {
+      "via": "products",
+      "collection": "primary-packaging"
+    },
+    "claims": {
+      "via": "products",
+      "collection": "claims"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sectors",
+  "info": {
+    "name": "sector"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sector_id": {
+      "type": "biginteger",
+      "unique": true,
+      "required": true
+    },
+    "sector_name": {
+      "type": "string"
+    },
+    "subsectors": {
+      "via": "sectors",
+      "collection": "subsector"
+    }
+  }
+}
