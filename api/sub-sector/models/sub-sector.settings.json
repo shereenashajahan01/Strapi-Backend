@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "sub_sectors",
   "info": {
-    "name": "sub_cat",
+    "name": "sub_category",
     "description": ""
   },
   "options": {

@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "issues",
   "info": {
-    "name": "issues",
+    "name": "issues_list",
     "description": ""
   },
   "options": {
@@ -35,18 +35,6 @@
     "description": {
       "type": "string"
     },
-    "logo": {
-      "collection": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
-    },
     "issue_cats": {
       "via": "issues",
       "collection": "issue-cat"
@@ -66,6 +54,18 @@
     "issue_events": {
       "via": "issues",
       "collection": "issue-event"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }

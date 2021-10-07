@@ -26,8 +26,8 @@
       "type": "string"
     },
     "issues": {
-      "collection": "issues",
       "via": "issue_events",
+      "collection": "issues",
       "dominant": true
     }
   }

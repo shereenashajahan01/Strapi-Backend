@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "packagings",
+  "collectionName": "user_tables",
   "info": {
-    "name": "type_of_packing",
-    "description": ""
+    "name": "user_table"
   },
   "options": {
     "increments": true,
@@ -12,15 +11,12 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "pack_id": {
+    "user_id": {
       "type": "string",
-      "unique": true,
-      "required": true
+      "required": true,
+      "unique": true
     },
-    "pack_name": {
-      "type": "string"
-    },
-    "pack_image": {
+    "user_image": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
@@ -31,11 +27,6 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
-    },
-    "products": {
-      "collection": "products",
-      "via": "packagings",
-      "dominant": true
     }
   }
 }

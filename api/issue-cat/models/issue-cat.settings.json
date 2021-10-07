@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "issue_cats",
   "info": {
-    "name": "issue_cat"
+    "name": "issue_category",
+    "description": ""
   },
   "options": {
     "increments": true,
