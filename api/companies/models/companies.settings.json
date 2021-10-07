@@ -1,0 +1,120 @@
+{
+  "kind": "collectionType",
+  "collectionName": "companies",
+  "info": {
+    "name": "companies",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "company_name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "country_of_info": {
+      "type": "string"
+    },
+    "established_year": {
+      "type": "date"
+    },
+    "annual_revenue": {
+      "type": "float"
+    },
+    "made_in_uae": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    },
+    "official_email": {
+      "type": "email"
+    },
+    "official_phone_no": {
+      "type": "biginteger"
+    },
+    "buisness_summary": {
+      "type": "richtext"
+    },
+    "no_of_emp": {
+      "type": "biginteger"
+    },
+    "logo_company": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "address": {
+      "type": "richtext"
+    },
+    "google_map_url": {
+      "type": "string"
+    },
+    "linked_in_url": {
+      "type": "string"
+    },
+    "insta_page": {
+      "type": "string"
+    },
+    "youtube_channel": {
+      "type": "string"
+    },
+    "certificates": {
+      "type": "string"
+    },
+    "country": {
+      "type": "country",
+      "columnType": "CHAR(2)"
+    },
+    "nationality": {
+      "type": "nationality",
+      "columnType": "CHAR(2)"
+    },
+    "nature_of_firms": {
+      "via": "companies",
+      "collection": "nature-of-firms"
+    },
+    "ownership_summaries": {
+      "via": "companies",
+      "collection": "ownership-summary"
+    },
+    "brandsses": {
+      "via": "companies",
+      "collection": "brandss"
+    },
+    "categories": {
+      "via": "companies",
+      "collection": "categories"
+    },
+    "exporter": {
+      "type": "string"
+    },
+    "standers": {
+      "type": "string"
+    },
+    "sub_sectors": {
+      "via": "companies",
+      "collection": "sub-sector"
+    },
+    "products": {
+      "via": "companies",
+      "collection": "products"
+    },
+    "sectors": {
+      "via": "companies",
+      "collection": "sector"
+    }
+  }
+}

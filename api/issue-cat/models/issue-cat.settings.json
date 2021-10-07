@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "ownership_summaries",
+  "collectionName": "issue_cats",
   "info": {
-    "name": "ownership_summary",
-    "description": ""
+    "name": "issue_cat"
   },
   "options": {
     "increments": true,
@@ -12,15 +11,15 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "owner_id": {
+    "issue_id": {
       "type": "string",
       "required": true,
       "unique": true
     },
-    "summary_name": {
+    "title": {
       "type": "string"
     },
-    "summary_img": {
+    "img": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
@@ -32,9 +31,9 @@
       "required": false,
       "pluginOptions": {}
     },
-    "companies": {
-      "via": "ownership_summaries",
-      "collection": "companies",
+    "issues": {
+      "via": "issue_cats",
+      "collection": "issues",
       "dominant": true
     }
   }

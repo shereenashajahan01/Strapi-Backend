@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "ownership_summaries",
+  "collectionName": "packagings",
   "info": {
-    "name": "ownership_summary",
+    "name": "packaging",
     "description": ""
   },
   "options": {
@@ -12,15 +12,15 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "owner_id": {
+    "pack_id": {
       "type": "string",
-      "required": true,
-      "unique": true
+      "unique": true,
+      "required": true
     },
-    "summary_name": {
+    "pack_name": {
       "type": "string"
     },
-    "summary_img": {
+    "pack_image": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
@@ -32,9 +32,9 @@
       "required": false,
       "pluginOptions": {}
     },
-    "companies": {
-      "via": "ownership_summaries",
-      "collection": "companies",
+    "products": {
+      "collection": "products",
+      "via": "packagings",
       "dominant": true
     }
   }

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/nature-of-firms",
+      "handler": "nature-of-firms.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/nature-of-firms/count",
+      "handler": "nature-of-firms.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/nature-of-firms/:id",
+      "handler": "nature-of-firms.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/nature-of-firms",
+      "handler": "nature-of-firms.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/nature-of-firms/:id",
+      "handler": "nature-of-firms.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/nature-of-firms/:id",
+      "handler": "nature-of-firms.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

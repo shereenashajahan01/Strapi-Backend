@@ -1,0 +1,71 @@
+{
+  "kind": "collectionType",
+  "collectionName": "issues",
+  "info": {
+    "name": "issues",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "issue_id": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "title": {
+      "type": "string"
+    },
+    "video": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "description": {
+      "type": "string"
+    },
+    "logo": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "issue_cats": {
+      "via": "issues",
+      "collection": "issue-cat"
+    },
+    "downloads": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "issue_events": {
+      "via": "issues",
+      "collection": "issue-event"
+    }
+  }
+}

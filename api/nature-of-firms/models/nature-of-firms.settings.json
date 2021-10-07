@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "ownership_summaries",
+  "collectionName": "nature_of_firms",
   "info": {
-    "name": "ownership_summary",
+    "name": "nature_of_firms",
     "description": ""
   },
   "options": {
@@ -12,15 +12,10 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "owner_id": {
-      "type": "string",
-      "required": true,
-      "unique": true
-    },
-    "summary_name": {
+    "nature_name": {
       "type": "string"
     },
-    "summary_img": {
+    "n_images": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
@@ -33,9 +28,14 @@
       "pluginOptions": {}
     },
     "companies": {
-      "via": "ownership_summaries",
+      "via": "nature_of_firms",
       "collection": "companies",
       "dominant": true
+    },
+    "nature_id": {
+      "type": "string",
+      "required": true,
+      "unique": true
     }
   }
 }

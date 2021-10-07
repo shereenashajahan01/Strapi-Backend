@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "ownership_summaries",
+  "collectionName": "sub_sectors",
   "info": {
-    "name": "ownership_summary",
+    "name": "sub_cat",
     "description": ""
   },
   "options": {
@@ -12,15 +12,25 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "owner_id": {
+    "sub_cat_id": {
       "type": "string",
       "required": true,
       "unique": true
     },
-    "summary_name": {
+    "cat_name": {
       "type": "string"
     },
-    "summary_img": {
+    "companies": {
+      "collection": "companies",
+      "via": "sub_sectors",
+      "dominant": true
+    },
+    "categories": {
+      "collection": "categories",
+      "via": "sub_sectors",
+      "dominant": true
+    },
+    "cat_img": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
@@ -32,9 +42,9 @@
       "required": false,
       "pluginOptions": {}
     },
-    "companies": {
-      "via": "ownership_summaries",
-      "collection": "companies",
+    "products": {
+      "collection": "products",
+      "via": "sub_cats",
       "dominant": true
     }
   }

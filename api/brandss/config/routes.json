@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/brandsses",
+      "handler": "brandss.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/brandsses/count",
+      "handler": "brandss.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/brandsses/:id",
+      "handler": "brandss.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/brandsses",
+      "handler": "brandss.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/brandsses/:id",
+      "handler": "brandss.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/brandsses/:id",
+      "handler": "brandss.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

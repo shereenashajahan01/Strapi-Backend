@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "sectors",
+  "collectionName": "claimsses",
   "info": {
-    "name": "sector"
+    "name": "claimss"
   },
   "options": {
     "increments": true,
@@ -11,22 +11,17 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "sec_id": {
+    "claim_id": {
       "type": "string",
       "required": true,
       "unique": true
     },
-    "sec_name": {
+    "claim_name": {
       "type": "string"
     },
-    "companies": {
-      "collection": "companies",
-      "via": "sectors",
-      "dominant": true
-    },
-    "subsectors": {
-      "via": "sectors",
-      "collection": "subsector"
+    "products": {
+      "via": "claimsses",
+      "collection": "products"
     }
   }
 }

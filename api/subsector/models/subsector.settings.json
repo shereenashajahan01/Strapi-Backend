@@ -11,10 +11,8 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "sec_id": {
-      "type": "biginteger",
-      "unique": true,
-      "required": true
+    "sub_id": {
+      "type": "string"
     },
     "sub_name": {
       "type": "string"

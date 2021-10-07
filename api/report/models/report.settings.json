@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "ownership_summaries",
+  "collectionName": "reports",
   "info": {
-    "name": "ownership_summary",
-    "description": ""
+    "name": "report"
   },
   "options": {
     "increments": true,
@@ -12,15 +11,15 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "owner_id": {
+    "repo_id": {
       "type": "string",
-      "required": true,
-      "unique": true
+      "unique": true,
+      "required": true
     },
-    "summary_name": {
+    "title": {
       "type": "string"
     },
-    "summary_img": {
+    "repo_img": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
@@ -32,10 +31,20 @@
       "required": false,
       "pluginOptions": {}
     },
-    "companies": {
-      "via": "ownership_summaries",
-      "collection": "companies",
-      "dominant": true
+    "download": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }

@@ -1,0 +1,90 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "products"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "product_name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "manufac_name": {
+      "type": "string"
+    },
+    "product_id": {
+      "type": "string"
+    },
+    "manufact_id": {
+      "type": "string"
+    },
+    "product_descrip": {
+      "type": "string"
+    },
+    "pck_size": {
+      "type": "string"
+    },
+    "price_per_pack": {
+      "type": "string"
+    },
+    "storage": {
+      "type": "string"
+    },
+    "product_img": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "incredients": {
+      "type": "string"
+    },
+    "nutritions": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "string"
+    },
+    "brandsses": {
+      "collection": "brandss",
+      "via": "products",
+      "dominant": true
+    },
+    "categories": {
+      "collection": "categories",
+      "via": "products",
+      "dominant": true
+    },
+    "companies": {
+      "collection": "companies",
+      "via": "products",
+      "dominant": true
+    },
+    "claimsses": {
+      "collection": "claimss",
+      "via": "products",
+      "dominant": true
+    },
+    "packagings": {
+      "via": "products",
+      "collection": "packaging"
+    },
+    "sub_cats": {
+      "via": "products",
+      "collection": "sub-sector"
+    }
+  }
+}

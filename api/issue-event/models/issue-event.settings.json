@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "sectors",
+  "collectionName": "issue_events",
   "info": {
-    "name": "sector"
+    "name": "issue_event"
   },
   "options": {
     "increments": true,
@@ -11,22 +11,24 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "sec_id": {
+    "title": {
+      "type": "string"
+    },
+    "title_id": {
       "type": "string",
       "required": true,
       "unique": true
     },
-    "sec_name": {
+    "date": {
+      "type": "date"
+    },
+    "event_description": {
       "type": "string"
     },
-    "companies": {
-      "collection": "companies",
-      "via": "sectors",
+    "issues": {
+      "collection": "issues",
+      "via": "issue_events",
       "dominant": true
-    },
-    "subsectors": {
-      "via": "sectors",
-      "collection": "subsector"
     }
   }
 }

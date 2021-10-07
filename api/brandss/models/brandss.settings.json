@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "ownership_summaries",
+  "collectionName": "brandsses",
   "info": {
-    "name": "ownership_summary",
-    "description": ""
+    "name": "brandss"
   },
   "options": {
     "increments": true,
@@ -12,15 +11,15 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "owner_id": {
+    "company_id": {
       "type": "string",
       "required": true,
       "unique": true
     },
-    "summary_name": {
+    "brand_name": {
       "type": "string"
     },
-    "summary_img": {
+    "brand_logo": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
@@ -33,9 +32,13 @@
       "pluginOptions": {}
     },
     "companies": {
-      "via": "ownership_summaries",
+      "via": "brandsses",
       "collection": "companies",
       "dominant": true
+    },
+    "products": {
+      "via": "brandsses",
+      "collection": "products"
     }
   }
 }
