@@ -90,10 +90,6 @@
       "via": "companies",
       "collection": "ownership-summary"
     },
-    "brandsses": {
-      "via": "companies",
-      "collection": "brandss"
-    },
     "categories": {
       "via": "companies",
       "collection": "categories"
@@ -104,10 +100,6 @@
     "standers": {
       "type": "string"
     },
-    "sub_sectors": {
-      "via": "companies",
-      "collection": "sub-sector"
-    },
     "products": {
       "via": "companies",
       "collection": "products"
@@ -115,6 +107,14 @@
     "sectors": {
       "via": "companies",
       "collection": "sector"
+    },
+    "brands": {
+      "via": "companies",
+      "collection": "brand"
+    },
+    "sub_categories": {
+      "via": "companies",
+      "collection": "sub-category"
     }
   }
 }

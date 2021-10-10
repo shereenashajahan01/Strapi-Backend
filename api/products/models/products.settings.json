@@ -58,11 +58,6 @@
     "tags": {
       "type": "string"
     },
-    "brandsses": {
-      "via": "products",
-      "collection": "brandss",
-      "dominant": true
-    },
     "categories": {
       "collection": "categories",
       "via": "products",
@@ -73,18 +68,21 @@
       "via": "products",
       "dominant": true
     },
-    "claimsses": {
+    "brands": {
       "via": "products",
-      "collection": "claimss",
-      "dominant": true
+      "collection": "brand"
     },
-    "packagings": {
+    "claims": {
       "via": "products",
-      "collection": "packaging"
+      "collection": "claim"
     },
-    "sub_cats": {
+    "type_of_packings": {
       "via": "products",
-      "collection": "sub-sector"
+      "collection": "type-of-packing"
+    },
+    "sub_categories": {
+      "via": "products",
+      "collection": "sub-category"
     }
   }
 }
