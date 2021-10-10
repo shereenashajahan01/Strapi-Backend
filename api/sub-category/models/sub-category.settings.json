@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "sub_categories",
   "info": {
-    "name": "categories"
+    "name": "sub_category"
   },
   "options": {
     "increments": true,
@@ -11,7 +11,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "category_id": {
+    "sub_category_id": {
       "type": "string",
       "required": true,
       "unique": true
@@ -19,7 +19,7 @@
     "category_name": {
       "type": "string"
     },
-    "category_img": {
+    "category_image": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
@@ -31,18 +31,20 @@
       "required": false,
       "pluginOptions": {}
     },
+    "categories": {
+      "collection": "categories",
+      "via": "sub_categories",
+      "dominant": true
+    },
     "companies": {
-      "via": "categories",
       "collection": "companies",
+      "via": "sub_categories",
       "dominant": true
     },
     "products": {
-      "via": "categories",
-      "collection": "products"
-    },
-    "sub_categories": {
-      "via": "categories",
-      "collection": "sub-category"
+      "collection": "products",
+      "via": "sub_categories",
+      "dominant": true
     }
   }
 }

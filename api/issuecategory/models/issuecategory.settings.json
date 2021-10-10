@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "issuecategories",
   "info": {
-    "name": "categories"
+    "name": "issuecategory"
   },
   "options": {
     "increments": true,
@@ -11,15 +11,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "category_id": {
-      "type": "string",
-      "required": true,
-      "unique": true
-    },
-    "category_name": {
+    "title": {
       "type": "string"
     },
-    "category_img": {
+    "description": {
+      "type": "richtext"
+    },
+    "image": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
@@ -31,18 +29,10 @@
       "required": false,
       "pluginOptions": {}
     },
-    "companies": {
-      "via": "categories",
-      "collection": "companies",
+    "issues": {
+      "collection": "issue",
+      "via": "issuecategories",
       "dominant": true
-    },
-    "products": {
-      "via": "categories",
-      "collection": "products"
-    },
-    "sub_categories": {
-      "via": "categories",
-      "collection": "sub-category"
     }
   }
 }

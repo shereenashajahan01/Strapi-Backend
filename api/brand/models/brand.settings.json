@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "brands",
   "info": {
-    "name": "categories"
+    "name": "brand"
   },
   "options": {
     "increments": true,
@@ -11,15 +11,15 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "category_id": {
+    "company_id": {
       "type": "string",
       "required": true,
       "unique": true
     },
-    "category_name": {
+    "brand_name": {
       "type": "string"
     },
-    "category_img": {
+    "brand_logo": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
@@ -32,17 +32,14 @@
       "pluginOptions": {}
     },
     "companies": {
-      "via": "categories",
       "collection": "companies",
+      "via": "brands",
       "dominant": true
     },
     "products": {
-      "via": "categories",
-      "collection": "products"
-    },
-    "sub_categories": {
-      "via": "categories",
-      "collection": "sub-category"
+      "collection": "products",
+      "via": "brands",
+      "dominant": true
     }
   }
 }

@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "issueevents",
   "info": {
-    "name": "categories"
+    "name": "issueevent"
   },
   "options": {
     "increments": true,
@@ -11,15 +11,16 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "category_id": {
-      "type": "string",
-      "required": true,
-      "unique": true
+    "description": {
+      "type": "richtext"
     },
-    "category_name": {
+    "title": {
       "type": "string"
     },
-    "category_img": {
+    "date": {
+      "type": "date"
+    },
+    "image": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
@@ -31,18 +32,10 @@
       "required": false,
       "pluginOptions": {}
     },
-    "companies": {
-      "via": "categories",
-      "collection": "companies",
+    "issues": {
+      "collection": "issue",
+      "via": "issueevents",
       "dominant": true
-    },
-    "products": {
-      "via": "categories",
-      "collection": "products"
-    },
-    "sub_categories": {
-      "via": "categories",
-      "collection": "sub-category"
     }
   }
 }
