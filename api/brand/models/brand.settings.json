@@ -37,8 +37,8 @@
       "dominant": true
     },
     "products": {
-      "collection": "products",
       "via": "brands",
+      "collection": "products",
       "dominant": true
     }
   }

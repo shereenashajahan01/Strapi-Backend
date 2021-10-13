@@ -115,6 +115,10 @@
     "sub_categories": {
       "via": "companies",
       "collection": "sub-category"
+    },
+    "issues": {
+      "via": "companies",
+      "collection": "issue"
     }
   }
 }

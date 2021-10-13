@@ -42,8 +42,8 @@
       "dominant": true
     },
     "products": {
-      "collection": "products",
       "via": "sub_categories",
+      "collection": "products",
       "dominant": true
     }
   }

@@ -32,8 +32,8 @@
       "pluginOptions": {}
     },
     "products": {
-      "collection": "products",
       "via": "type_of_packings",
+      "collection": "products",
       "dominant": true
     }
   }

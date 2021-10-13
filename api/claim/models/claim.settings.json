@@ -20,8 +20,8 @@
       "type": "string"
     },
     "products": {
-      "collection": "products",
       "via": "claims",
+      "collection": "products",
       "dominant": true
     }
   }

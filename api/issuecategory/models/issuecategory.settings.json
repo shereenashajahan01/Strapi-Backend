@@ -30,8 +30,8 @@
       "pluginOptions": {}
     },
     "issues": {
-      "collection": "issue",
       "via": "issuecategories",
+      "collection": "issue",
       "dominant": true
     }
   }

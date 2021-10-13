@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "issues",
   "info": {
-    "name": "issue"
+    "name": "issue",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -54,6 +55,11 @@
     "issueevents": {
       "via": "issues",
       "collection": "issueevent"
+    },
+    "companies": {
+      "collection": "companies",
+      "via": "issues",
+      "dominant": true
     }
   }
 }

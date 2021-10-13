@@ -1,5 +1,5 @@
 {
-  "name": "uae-food-project",
+  "name": "fdp-project",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -11,10 +11,8 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "fast-csv": "^4.3.6",
     "knex": "0.21.18",
-    "pg": "^8.7.1",
-    "sqlite3": "5.0.0",
+    "pg": "8.5.1",
     "strapi": "3.6.8",
     "strapi-admin": "3.6.8",
     "strapi-connector-bookshelf": "3.6.8",
@@ -22,17 +20,16 @@
     "strapi-plugin-content-type-builder": "3.6.8",
     "strapi-plugin-email": "3.6.8",
     "strapi-plugin-i18n": "3.6.8",
-    "strapi-plugin-international-fields": "^1.1.1",
+    "strapi-plugin-import-export-content": "^0.4.1",
     "strapi-plugin-upload": "3.6.8",
     "strapi-plugin-users-permissions": "3.6.8",
-    "strapi-provider-upload-aws-s3": "^3.6.8",
     "strapi-utils": "3.6.8"
   },
   "author": {
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "867a853f-7a8e-45e1-9599-09fc4734a8b5"
+    "uuid": "68d4362a-3d26-4ea9-a12c-c3e0222d4ede"
   },
   "engines": {
     "node": ">=10.16.0 <=14.x.x",
