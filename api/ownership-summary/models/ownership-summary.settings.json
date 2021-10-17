@@ -12,11 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "owner_id": {
-      "type": "string",
-      "required": true,
-      "unique": true
-    },
     "summary_name": {
       "type": "string"
     },

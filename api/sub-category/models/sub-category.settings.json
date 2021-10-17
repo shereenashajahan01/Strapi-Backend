@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "sub_categories",
   "info": {
-    "name": "sub_category"
+    "name": "sub_category",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,11 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "sub_category_id": {
-      "type": "string",
-      "required": true,
-      "unique": true
-    },
     "category_name": {
       "type": "string"
     },
@@ -32,8 +28,8 @@
       "pluginOptions": {}
     },
     "categories": {
-      "collection": "categories",
       "via": "sub_categories",
+      "collection": "categories",
       "dominant": true
     },
     "companies": {

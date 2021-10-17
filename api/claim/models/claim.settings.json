@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "claims",
   "info": {
-    "name": "claim"
+    "name": "claim",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,11 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "claim_id": {
-      "type": "string",
-      "required": true,
-      "unique": true
-    },
     "claim_name": {
       "type": "string"
     },

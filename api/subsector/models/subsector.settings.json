@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "subsectors",
   "info": {
-    "name": "subsector"
+    "name": "subsector",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,15 +12,12 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "sub_id": {
-      "type": "string"
-    },
     "sub_name": {
       "type": "string"
     },
     "sectors": {
-      "collection": "sector",
       "via": "subsectors",
+      "collection": "sector",
       "dominant": true
     }
   }

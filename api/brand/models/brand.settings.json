@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "brands",
   "info": {
-    "name": "brand"
+    "name": "brand",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,11 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "company_id": {
-      "type": "string",
-      "required": true,
-      "unique": true
-    },
     "brand_name": {
       "type": "string"
     },

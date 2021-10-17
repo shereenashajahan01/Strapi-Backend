@@ -18,9 +18,6 @@
     "description": {
       "type": "richtext"
     },
-    "impacts": {
-      "type": "richtext"
-    },
     "video_url": {
       "type": "richtext"
     },
@@ -60,6 +57,15 @@
       "collection": "companies",
       "via": "issues",
       "dominant": true
+    },
+    "impact": {
+      "type": "richtext"
+    },
+    "survey_link": {
+      "type": "richtext"
+    },
+    "rank": {
+      "type": "string"
     }
   }
 }

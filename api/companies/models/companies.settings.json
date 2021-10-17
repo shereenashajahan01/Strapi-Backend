@@ -119,6 +119,10 @@
     "issues": {
       "via": "companies",
       "collection": "issue"
+    },
+    "user_tables": {
+      "via": "companies",
+      "collection": "user-table"
     }
   }
 }

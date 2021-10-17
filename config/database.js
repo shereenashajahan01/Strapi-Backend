@@ -1,6 +1,11 @@
-
 module.exports = ({ env }) => ({
   defaultConnection: "default",
+  "backup-restore": {
+    postgres: {
+      // Update with your path
+      pathToPgDump: "C:/Program Files/PostgreSQL/13/bin/pg_dump",
+    },
+  },
   connections: {
     default: {
       connector: "bookshelf",
@@ -20,3 +25,4 @@ module.exports = ({ env }) => ({
     },
   },
 });
+

@@ -29,17 +29,10 @@
       "required": false,
       "pluginOptions": {}
     },
-    "user_company_image": {
-      "collection": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
+    "companies": {
+      "collection": "companies",
+      "via": "user_tables",
+      "dominant": true
     }
   }
 }

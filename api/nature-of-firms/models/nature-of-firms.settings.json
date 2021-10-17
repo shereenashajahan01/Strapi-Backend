@@ -31,11 +31,6 @@
       "via": "nature_of_firms",
       "collection": "companies",
       "dominant": true
-    },
-    "nature_id": {
-      "type": "string",
-      "required": true,
-      "unique": true
     }
   }
 }
